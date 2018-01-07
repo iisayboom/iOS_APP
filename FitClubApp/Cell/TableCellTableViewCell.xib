@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="KGk-i7-Jjw" customClass="TableCellTableViewCell" customModule="FitClubApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-Ua-88s">
+                        <rect key="frame" x="16" y="11" width="171" height="178"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mountainclimber in pomphouding" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mm-Je-xy9">
+                        <rect key="frame" x="188" y="33" width="177" height="59"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aantal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZD-sR-jj2">
+                        <rect key="frame" x="195" y="100" width="163" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="163" id="8sV-NK-kJd"/>
+                            <constraint firstAttribute="height" constant="29" id="d3P-2O-pg8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ki-Ua-88s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3aA-EG-NM7"/>
+                    <constraint firstItem="7Mm-Je-xy9" firstAttribute="centerX" secondItem="WZD-sR-jj2" secondAttribute="centerX" id="8Ni-cv-DJn"/>
+                    <constraint firstItem="7Mm-Je-xy9" firstAttribute="leading" secondItem="5ki-Ua-88s" secondAttribute="trailing" constant="1" id="FVv-b3-r4r"/>
+                    <constraint firstItem="WZD-sR-jj2" firstAttribute="top" secondItem="7Mm-Je-xy9" secondAttribute="bottom" constant="8" symbolic="YES" id="Kst-hl-FCx"/>
+                    <constraint firstItem="5ki-Ua-88s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LUA-vl-HuF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WZD-sR-jj2" secondAttribute="trailing" constant="1" id="Mb0-7c-2yU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WZD-sR-jj2" secondAttribute="bottom" constant="60" id="l9h-8N-jdN"/>
+                    <constraint firstItem="WZD-sR-jj2" firstAttribute="leading" secondItem="5ki-Ua-88s" secondAttribute="trailing" constant="8" symbolic="YES" id="qh5-XH-QRJ"/>
+                    <constraint firstItem="5ki-Ua-88s" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="xOl-zg-lm8"/>
+                    <constraint firstItem="7Mm-Je-xy9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="zm7-fC-TmQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgOefening" destination="5ki-Ua-88s" id="niw-yV-QQE"/>
+                <outlet property="txtAantal" destination="WZD-sR-jj2" id="onY-Fd-Pev"/>
+                <outlet property="txtOefening" destination="7Mm-Je-xy9" id="JYU-hx-QBw"/>
+            </connections>
+            <point key="canvasLocation" x="-108.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>
